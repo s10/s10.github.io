@@ -1,0 +1,29 @@
+# Dependencies
+markdown:            kramdown
+highlighter:         pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:            /:year/:month/:day/:title/
+relative_permalinks: true
+
+# Setup
+title:               s10
+tagline:             'The blog of'
+description:         'Vlad Esten. Vlad Gusev. Essays, reviews, poems, tales, stories, how-tos, tutorials.'
+url:                 http://s10.github.io
+baseurl:             /
+paginate:            10
+
+# About/contact
+author:
+  name:              Vlad Gusev
+  email:             vlad@s10.in
+  github:            s10
+
+# Custom vars
+version:             1.0.0
+
+# Exclude Ruby gem stuff
+exclude:             ["vendor"]
