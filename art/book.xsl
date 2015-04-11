@@ -19,7 +19,6 @@ body { padding: 20px; text-align: center; }
 #info h1 { margin: 0; font: 400% Georgia, "Times New Roman", Times, serif; }
 #info h2 { margin: 0; font: 200% Georgia, "Times New Roman", Times, serif;}
 #info h3 { margin: 0; padding: 0; font: italic normal 120% serif; color: lightgray; }
-<!--h1 { margin: 50px 0 10px 0; padding-top: 10px; font: bold 300% "Courier New", monospace; white-space: pre; text-align: center; }-->
 #book h1 { font-size: 1em; height: 2rem; line-height: 2rem }
 h2 { margin: 10px 0 0 40px; font: bold 140% "Courier New", monospace; }
 pre { font: normal 12pt "Times New Roman", serif; }
@@ -27,10 +26,15 @@ pre { font: normal 12pt "Times New Roman", serif; }
 em { display: inline; font-style: italic; }
 .epigraph { display: block; margin-left: 200px; font-size: 10pt; font-style: italic; clear: both; }
     
-#book .ui-accordion-header {
+.ui-accordion-header {
   background: #eee;
   margin: 0px;
+  outline: none;
 }
+.ui-accordion .ui-accordion-content {
+  margin: 0 auto;
+}
+
 .time {
   position: absolute;
   right: 10%;
