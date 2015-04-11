@@ -12,20 +12,43 @@
 <meta name="language" content="ru" />
 <title><xsl:value-of select="/book/info/book-title"/> — Влад Эстен</title>
 <style type="text/css" media="screen">
-* { margin: 0; padding: 0; }
+* { margin: 0; padding: 0; background-image: none !important}
 body { padding: 20px; text-align: center; }
 .cycle { margin: 20px auto; text-align: left; width: 600px; }
 #info { margin: 30px; }
 #info h1 { margin: 0; font: 400% Georgia, "Times New Roman", Times, serif; }
 #info h2 { margin: 0; font: 200% Georgia, "Times New Roman", Times, serif;}
 #info h3 { margin: 0; padding: 0; font: italic normal 120% serif; color: lightgray; }
-h1 { margin: 50px 0 10px 0; padding-top: 10px; font: bold 300% "Courier New", monospace; white-space: pre; text-align: center; }
+<!--h1 { margin: 50px 0 10px 0; padding-top: 10px; font: bold 300% "Courier New", monospace; white-space: pre; text-align: center; }-->
+#book h1 { font-size: 1em; height: 2rem; line-height: 2rem }
 h2 { margin: 10px 0 0 40px; font: bold 140% "Courier New", monospace; }
 pre { font: normal 12pt "Times New Roman", serif; }
 .date_t { margin: 15px 0px 30px 130px; font: italic normal 10pt "Times New Roman", serif; color: #777; text-align: left; }
 em { display: inline; font-style: italic; }
 .epigraph { display: block; margin-left: 200px; font-size: 10pt; font-style: italic; clear: both; }
+    
+#book .ui-accordion-header {
+    background: #eee;
+    margin: 0px;
+}
+.time {
+    position: absolute;
+    right: 10%;
+}
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+<script>
+$(function() {
+    $( "#book" ).accordion({
+      collapsible: true,
+      heightStyle: "content",
+      icons: null,
+      animate: false,
+    });
+  });
+</script>
 </head>
 <body>
 <xsl:apply-templates select="book/info" />
@@ -39,8 +62,9 @@ em { display: inline; font-style: italic; }
 </xsl:template>
     
 <xsl:template match="cycle">
-	<div class="cycle">
-	<h1><xsl:value-of select="title"/></h1>
+	<h1><xsl:value-of select="title"/><xsl:text> </xsl:text><span class="time"><xsl:value-of select="time"/></span></h1>
+    
+    <div class="cycle">
 	<xsl:apply-templates select="poem"/>
 	</div>
 </xsl:template>
