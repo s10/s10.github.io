@@ -28,12 +28,14 @@ em { display: inline; font-style: italic; }
 .epigraph { display: block; margin-left: 200px; font-size: 10pt; font-style: italic; clear: both; }
     
 #book .ui-accordion-header {
-    background: #eee;
-    margin: 0px;
+  background: #eee;
+  margin: 0px;
 }
 .time {
-    position: absolute;
-    right: 10%;
+  position: absolute;
+  right: 10%;
+  color: #ccc;
+  font-size: 0.9rem;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
