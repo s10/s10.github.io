@@ -52,11 +52,11 @@ h2 {
   font: bold 140% "Courier New", monospace;
 }
 pre {
-  font: normal 12pt "Times New Roman", serif;
+  font: normal 1.2rem "Times New Roman", serif;
 }
 .date_t {
   margin: 0.5rem 0px 2rem 10rem;
-  font: italic normal 10pt "Times New Roman", serif;
+  font: italic normal 0.9rem "Times New Roman", serif;
   color: #777;
   text-align: left;
 }
@@ -67,7 +67,7 @@ em {
 .epigraph {
   display: block;
   margin-left: 25%;
-  font-size: 10pt;
+  font-size: 0.9rem;
   font-style: italic;
   clear: both;
 }
