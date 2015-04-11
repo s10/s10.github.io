@@ -52,7 +52,7 @@ h2 {
   font: bold 140% "Courier New", monospace;
 }
 pre {
-  font: normal 1.2rem "Times New Roman", serif;
+  font: normal 1.1rem "PT Serif", Georgia, "Times New Roman", serif;
 }
 .date_t {
   margin: 0.5rem 0px 2rem 10rem;
