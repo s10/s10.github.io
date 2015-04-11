@@ -28,11 +28,16 @@ em { display: inline; font-style: italic; }
 </style>
 </head>
 <body>
-<xsl:apply-templates/>
+<xsl:apply-templates select="book/info" />
+<div id="book">
+<xsl:apply-templates select="book/cycle">
+    <xsl:sort select="position()" data-type="number" order="descending"/>
+</xsl:apply-templates>
+</div>
 </body>
 </html>
 </xsl:template>
- 
+    
 <xsl:template match="cycle">
 	<div class="cycle">
 	<h1><xsl:value-of select="title"/></h1>
@@ -52,11 +57,13 @@ em { display: inline; font-style: italic; }
   <!--<h3>(<xsl:value-of select="first-name"/><xsl:text> </xsl:text><xsl:value-of select="last-name"/>)</h3>-->
 </xsl:template>
     
-<xsl:template match="poem">  
+<xsl:template match="poem">
+     <div>
      <h2><xsl:value-of select="name"/></h2>
      <xsl:apply-templates select="epigraph"/>
      <xsl:apply-templates select="text"/>
      <xsl:apply-templates select="end"/>
+     </div>
 </xsl:template>
 
 <xsl:template match="text">
