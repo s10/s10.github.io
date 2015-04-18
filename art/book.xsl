@@ -98,6 +98,14 @@ $(function() {
       heightStyle: "content",
       icons: null,
       animate: false,
+      activate: function (event, ui) {
+        var scrollTop = $(".accordion").scrollTop();
+        if(!ui.newHeader.length) return;
+        var top = $(ui.newHeader).offset().top;
+        $("html,body").animate({
+            scrollTop: scrollTop + top - 35
+        }, "fast");
+      }
     });
   });
 </script>
