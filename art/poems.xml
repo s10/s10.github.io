@@ -1698,6 +1698,7 @@
 
 <cycle>
   <time>2015</time>
+  <title>Трамплин</title>
   <poem>
     <name>***</name>
     <text>
@@ -1753,8 +1754,13 @@
       </place>
     </end>
   </poem>
+</cycle>
+
+<cycle>
+  <time>2015</time>
+  <title>Ф</title>
   <poem>
-    <name>***</name>
+    <name>0</name>
     <text>
 непонимание и отличие,
 витрины, зелень, кофеин,
@@ -1776,6 +1782,25 @@
       <place>
         <land>Эстония</land>
         <settlement>Таллинн</settlement>
+      </place>
+    </end>
+  </poem>
+  <poem>
+    <name>1</name>
+    <text>
+фиолетовые облачные штаны
+ингерманландский город
+шаг и прыжок веры
+    </text>
+    <end>
+      <date>
+        <day>12</day>
+        <month>06</month>
+        <year>2015</year>
+      </date>
+      <place>
+        <land>Россия</land>
+        <settlement>Санкт-Петербург</settlement>
       </place>
     </end>
   </poem>
