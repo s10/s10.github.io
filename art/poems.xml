@@ -1804,6 +1804,25 @@
       </place>
     </end>
   </poem>
+  <poem>
+    <name>2</name>
+    <text>
+фиолетовые волосы
+добрейшая улыбочка
+радоваться! не могу
+    </text>
+    <end>
+      <date>
+        <day>24</day>
+        <month>06</month>
+        <year>2015</year>
+      </date>
+      <place>
+        <land>Россия</land>
+        <settlement>Санкт-Петербург</settlement>
+      </place>
+    </end>
+  </poem>
 </cycle>
 
 </book>
