@@ -1823,6 +1823,28 @@
       </place>
     </end>
   </poem>
+  <poem>
+    <name>3</name>
+    <text>
+задыхающийся дельфин
+бородатый пингвин
+серебряное окно
+мещанская табуретка
+желанные завитушки
+локализованная боль
+    </text>
+    <end>
+      <date>
+        <day>5</day>
+        <month>08</month>
+        <year>2015</year>
+      </date>
+      <place>
+        <land>Россия</land>
+        <settlement>Санкт-Петербург</settlement>
+      </place>
+    </end>
+  </poem>
 </cycle>
 
 </book>
