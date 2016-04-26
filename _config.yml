@@ -14,7 +14,7 @@ permalink:            /:year/:month/:day/:title/
 title:               s10
 tagline:             'The blog of'
 description:         'Vlad Esten. Vlad Gusev. Essays, reviews, poems, tales, stories, how-tos, tutorials.'
-url:                 http://s10.github.io
+url:                 https://s10.github.io
 baseurl:             /
 paginate:            10
 
