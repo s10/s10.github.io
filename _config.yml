@@ -17,6 +17,7 @@ description:         'Vlad Esten. Vlad Gusev. Essays, reviews, poems, tales, sto
 url:                 https://s10.github.io
 baseurl:             /
 paginate:            10
+excerpt_separator: <!--more-->
 
 # About/contact
 author:
