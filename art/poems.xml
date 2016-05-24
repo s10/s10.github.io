@@ -1947,6 +1947,27 @@
       </place>
     </end>
   </poem>
+  <poem>
+    <name>8</name>
+    <text>
+заморозь
+сдуй заблудись
+кривую возьми цвета сливы
+и сито в колодце
+кинь лень
+    </text>
+    <end>
+      <date>
+        <day>23</day>
+        <month>05</month>
+        <year>2016</year>
+      </date>
+      <place>
+        <land>Россия</land>
+        <settlement>Санкт-Петербург</settlement>
+      </place>
+    </end>
+  </poem>
 </cycle>
 
 </book>
