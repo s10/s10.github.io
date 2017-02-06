@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
- 
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml">
 <xsl:output method="html"  doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN" doctype-system="http://www.w3.org/TR/html4/loose.dtd"/>
 <xsl:template match="/">
@@ -83,7 +83,7 @@ em {
   margin: 0px;
   outline: none;
 }
-  
+
 .ui-accordion .ui-accordion-content {
   margin: 0 auto;
 }
@@ -120,10 +120,10 @@ $(function() {
 </body>
 </html>
 </xsl:template>
-    
+
 <xsl:template match="cycle">
 	<h1><xsl:value-of select="title"/><xsl:text> </xsl:text><span class="time"><xsl:value-of select="time"/></span></h1>
-    
+
     <div class="cycle">
 	<xsl:apply-templates select="poem"/>
 	</div>
@@ -140,7 +140,7 @@ $(function() {
 	<h2><xsl:value-of select="pen-name"/></h2>
   <!--<h3>(<xsl:value-of select="first-name"/><xsl:text> </xsl:text><xsl:value-of select="last-name"/>)</h3>-->
 </xsl:template>
-    
+
 <xsl:template match="poem">
      <div>
      <h2><xsl:value-of select="name"/></h2>
@@ -164,21 +164,21 @@ $(function() {
 
 <xsl:template match="date">
 	<xsl:value-of select="day"/> <xsl:apply-templates select="month"/> <xsl:value-of select="year" /> года</xsl:template>
-	
+
 <xsl:template match="month">
-	<xsl:if test="number() = 01"><xsl:text> января </xsl:text></xsl:if> 
-	<xsl:if test="number() = 02"><xsl:text> февраля </xsl:text></xsl:if> 
-	<xsl:if test="number() = 03"><xsl:text> марта </xsl:text></xsl:if> 
-	<xsl:if test="number() = 04"><xsl:text> апреля </xsl:text></xsl:if> 
-	<xsl:if test="number() = 05"><xsl:text> мая </xsl:text></xsl:if> 
-	<xsl:if test="number() = 06"><xsl:text> июня </xsl:text></xsl:if> 
-	<xsl:if test="number() = 07"><xsl:text> июля </xsl:text></xsl:if> 
-	<xsl:if test="number() = 08"><xsl:text> августа </xsl:text></xsl:if> 
-	<xsl:if test="number() = 09"><xsl:text> сентября </xsl:text></xsl:if> 
-	<xsl:if test="number() = 10"><xsl:text> октября </xsl:text></xsl:if> 
-	<xsl:if test="number() = 11"><xsl:text> ноября </xsl:text></xsl:if> 
-	<xsl:if test="number() = 12"><xsl:text> декабря </xsl:text></xsl:if> 
-	<xsl:if test="number() = false()"><xsl:text> числа какого-то месяца </xsl:text></xsl:if> 
+	<xsl:if test="number() = 01"><xsl:text> января </xsl:text></xsl:if>
+	<xsl:if test="number() = 02"><xsl:text> февраля </xsl:text></xsl:if>
+	<xsl:if test="number() = 03"><xsl:text> марта </xsl:text></xsl:if>
+	<xsl:if test="number() = 04"><xsl:text> апреля </xsl:text></xsl:if>
+	<xsl:if test="number() = 05"><xsl:text> мая </xsl:text></xsl:if>
+	<xsl:if test="number() = 06"><xsl:text> июня </xsl:text></xsl:if>
+	<xsl:if test="number() = 07"><xsl:text> июля </xsl:text></xsl:if>
+	<xsl:if test="number() = 08"><xsl:text> августа </xsl:text></xsl:if>
+	<xsl:if test="number() = 09"><xsl:text> сентября </xsl:text></xsl:if>
+	<xsl:if test="number() = 10"><xsl:text> октября </xsl:text></xsl:if>
+	<xsl:if test="number() = 11"><xsl:text> ноября </xsl:text></xsl:if>
+	<xsl:if test="number() = 12"><xsl:text> декабря </xsl:text></xsl:if>
+	<xsl:if test="number() = false()"><xsl:text> числа какого-то месяца </xsl:text></xsl:if>
 </xsl:template>
 
 <xsl:template match="place">
