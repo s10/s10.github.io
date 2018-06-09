@@ -32,7 +32,7 @@ version:             1.0.0
 exclude:             ["vendor"]
 
 # Gems
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-paginate
