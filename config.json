@@ -12,6 +12,11 @@
         "fixed": ":title/"
     },
 
+    "staticDir": [
+        "static",
+        "art"
+    ],
+
     "markup": {
         "goldmark": {
             "extensions": {
