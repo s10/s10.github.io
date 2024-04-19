@@ -1,0 +1,4 @@
+baseURL: https://s10.github.io
+disablePathToLower: true
+languageCode: en-us
+title: s10
