@@ -1,0 +1,51 @@
+{
+    "contentdir": "content",
+    "layoutdir": "layouts",
+    "publishdir": "public",
+
+    "builddrafts": false,
+
+    "baseurl": "https://s10.github.io",
+    "canonifyurls": true,
+    "permalinks": {
+        "post": ":year/:month/:day/:title/",
+        "fixed": ":title/"
+    },
+
+    "markup": {
+        "goldmark": {
+            "extensions": {
+                "typographer": true
+            },
+            "renderer": {
+                "unsafe": true
+            }
+        }
+    },
+
+    "pygmentsuseclasses": true,
+
+    "menu": {
+        "main": [
+            {
+                "identifier": "categories",
+                "name": "Categories Section from Menu",
+                "title": "Categories section",
+                "url": "/categories/",
+                "weight": -110
+            }
+        ]
+    },
+
+    "params": {
+        "Title": "s10",
+        "Tagline": "The blog of",
+        "Author": "Vlad Gusev",
+        "Description": "Vlad Esten. Vlad Gusev. Essays, reviews, poems, tales, stories.",
+        "DateForm": "2024-01-01",
+        "mainSections": [
+            "post"
+        ],
+	"disableFonts": false
+    }
+}
