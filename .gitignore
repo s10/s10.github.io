@@ -1,0 +1,7 @@
+*~
+output
+output/*
+public
+public/*
+Makefile
+.hugo_build.lock
